@@ -16,8 +16,66 @@
   </head>
   <body class="font-nunito">
     <!-- into section  -->
-    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200"></div>
-    <!-- navbar -->
-    <nav class="fixed top-0 bg-white"></nav>
+    <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+      <!-- navbar -->
+      <nav class="w-full fixed top-0 bg-white z-10">
+        <div class="container mx-auto py-5 flex items-center justify-between">
+          <!-- logo & name -->
+          <div class="flex items-center gap-2">
+            <img class="w-8" src="./img/logo.png" alt="" />
+            <span class="text-lg font-bold text-indigo-900">ProjectUX.</span>
+          </div>
+          <!-- menu  -->
+          <div>
+            <ul
+              class="hidden md:flex space-x-10 text-gray-500 font-bold text-sm uppercase"
+            >
+              <li class="hover:text-indigo-400">
+                <a href="#">HomePage</a>
+              </li>
+              <li class="hover:text-indigo-400">
+                <a href="#">About me</a>
+              </li>
+              <li class="hover:text-indigo-400">
+                <a href="#">Services</a>
+              </li>
+              <li class="hover:text-indigo-400">
+                <a href="#">Works</a>
+              </li>
+              <li class="hover:text-indigo-400">
+                <a href="#">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <!-- img  -->
+          <img
+            class="hidden md:block w-8 cursor-pointer"
+            src="./img/moon.png"
+            alt=""
+          />
+          <!-- Hamburger Icon -->
+          <div
+            class="flex flex-col gap-1 md:hidden cursor-pointer z-20"
+            id="hamburger"
+          >
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="w-6 h-0.5 bg-black"></div>
+          </div>
+          <!-- Mobile Menu -->
+          <ul
+            id="menu"
+            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+          >
+            <li><a href="#">HomePage</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
