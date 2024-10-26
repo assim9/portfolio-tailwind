@@ -10,7 +10,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      nunito: ["Nunito", "sans-serif"], // Nunito font included
+      nunito: ['"Nunito"', "sans-serif"], // Nunito font included
     },
   },
   plugins: [],
