@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio Tailwind</title>
   </head>
-  <body class="font-nunito">
+  <body class="nunito">
     <!-- into section  -->
-    <section class="h-[50dvh] lg:h-screen bg-gradient-to-t from-indigo-200">
+    <section
+      class="relative h-[50dvh] overflow-hidden bg-gradient-to-t from-indigo-200 lg:h-screen"
+    >
       <!-- navbar -->
-      <nav class="w-full fixed top-0 bg-white z-10">
-        <div class="container mx-auto py-5 flex items-center justify-between">
+      <nav class="fixed top-0 z-10 w-full bg-white">
+        <div class="container mx-auto flex items-center justify-between py-5">
           <!-- logo & name -->
           <div class="flex items-center gap-2">
             <img class="w-8" src="./img/logo.png" alt="" />
@@ -28,13 +30,13 @@
           <!-- menu  -->
           <div>
             <ul
-              class="hidden md:flex space-x-10 text-gray-500 font-bold text-sm uppercase"
+              class="hidden space-x-10 text-sm font-bold uppercase text-gray-500 md:flex"
             >
               <li class="hover:text-indigo-400">
-                <a href="#">HomePage</a>
+                <a href="#">Home</a>
               </li>
               <li class="hover:text-indigo-400">
-                <a href="#">About me</a>
+                <a href="#About">About me</a>
               </li>
               <li class="hover:text-indigo-400">
                 <a href="#">Services</a>
@@ -49,23 +51,23 @@
           </div>
           <!-- img  -->
           <img
-            class="hidden md:block w-8 cursor-pointer"
+            class="hidden w-8 cursor-pointer md:block"
             src="./img/moon.png"
             alt=""
           />
           <!-- Hamburger Icon -->
           <div
-            class="flex flex-col gap-1 md:hidden cursor-pointer z-20"
+            class="z-20 flex cursor-pointer flex-col gap-1 md:hidden"
             id="hamburger"
           >
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
+            <div class="h-0.5 w-6 bg-black"></div>
+            <div class="h-0.5 w-6 bg-black"></div>
+            <div class="h-0.5 w-6 bg-black"></div>
           </div>
           <!-- Mobile Menu -->
           <ul
             id="menu"
-            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
+            class="absolute left-0 top-0 hidden w-full space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white"
           >
             <li><a href="#">HomePage</a></li>
             <li><a href="#">About me</a></li>
@@ -75,6 +77,64 @@
           </ul>
         </div>
       </nav>
+      <!-- img man -->
+      <img
+        class="absolute bottom-0 right-0 mx-auto h-5/6 object-cover lg:left-0 lg:translate-x-[-54px]"
+        src="./img/man.png"
+        alt="man"
+      />
+      <!-- cercel -->
+      <div
+        class="absolute -bottom-1/4 left-0 right-0 -z-20 mx-auto hidden h-[54rem] w-[54rem] rounded-full bg-indigo-900 lg:block"
+      ></div>
+      <!-- jop name -->
+      <div
+        class="absolute left-5 top-1/3 text-xl font-bold sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-32 xl:text-8xl"
+      >
+        <span class="text-gray-600">Frelance</span>
+        <p id="text" class="text-red-500"></p>
+      </div>
+      <!-- card -->
+      <div
+        class="absolute bottom-0 right-36 top-0 m-auto hidden h-fit w-1/4 flex-col gap-y-3 rounded-2xl bg-white p-6 lg:flex"
+      >
+        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Asim</h1>
+        <p class="text-gray-500">
+          I’m Asim, a software engineering student at Istanbul Nisantasi
+          University. Design Tools: Figma, Adobe XD Web Development: HTML, CSS,
+          JavaScript, Bootstrap5, Tailwind Design Process: Wireframing, mockups,
+          and UX data analysis
+        </p>
+        <a
+          class="w-fit rounded-md bg-indigo-600 px-3 py-2 font-medium text-white"
+          href="#contact"
+          >Click Me</a
+        >
+      </div>
+    </section>
+    <!-- about -->
+    <section class="container mx-auto flex gap-20 py-40" id="About">
+      <!-- lift -->
+      <div class="relative">
+        <img
+          class="object-cove absolute left-0 top-0 -z-20 h-1/4"
+          src="./img/dots.png"
+          alt="dots"
+        />
+      </div>
+      <div class="">
+        <img
+          class="h-full overflow-hidden rounded-full"
+          src="./img/portrait.png"
+          alt=""
+        />
+      </div>
+      <!-- right  -->
+      <div class="my-auto flex flex-col gap-3">
+        <h1 class="text-4xl font-bold uppercase text-indigo-600">About Me</h1>
+        <h1 class="text-3xl font-semibold text-black">Better Design</h1>
+        <h1 class="text-3xl font-bold text-black">Better Experince</h1>
+      </div>
     </section>
     <script src="./app.js"></script>
   </body>

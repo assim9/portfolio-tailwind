@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.nunito {
+  @apply font-nunito;
+}
+html {
+  scroll-behavior: smooth;
+}
