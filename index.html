@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -14,14 +14,14 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio Tailwind</title>
   </head>
-  <body class="nunito">
+  <body class="nunito-body">
     <!-- into section  -->
     <section
       class="relative h-[50dvh] overflow-hidden bg-gradient-to-t from-indigo-200 lg:h-screen"
     >
       <!-- navbar -->
       <nav class="fixed top-0 z-10 w-full bg-white">
-        <div class="container mx-auto flex items-center justify-between py-5">
+        <div class="container flex items-center justify-between py-5 mx-auto">
           <!-- logo & name -->
           <div class="flex items-center gap-2">
             <img class="w-8" src="./img/logo.png" alt="" />
@@ -30,7 +30,7 @@
           <!-- menu  -->
           <div>
             <ul
-              class="hidden space-x-10 text-sm font-bold uppercase text-gray-500 md:flex"
+              class="hidden space-x-10 text-sm font-bold text-gray-500 uppercase md:flex"
             >
               <li class="hover:text-indigo-400">
                 <a href="#">Home</a>
@@ -53,11 +53,11 @@
           <img
             class="hidden w-8 cursor-pointer md:block"
             src="./img/moon.png"
-            alt=""
+            alt="moon"
           />
           <!-- Hamburger Icon -->
           <div
-            class="z-20 flex cursor-pointer flex-col gap-1 md:hidden"
+            class="z-20 flex flex-col gap-1 cursor-pointer md:hidden"
             id="hamburger"
           >
             <div class="h-0.5 w-6 bg-black"></div>
@@ -67,7 +67,7 @@
           <!-- Mobile Menu -->
           <ul
             id="menu"
-            class="absolute left-0 top-0 hidden w-full space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white"
+            class="absolute top-0 left-0 hidden w-full p-10 space-y-10 text-center text-white bg-indigo-900 rounded-b-3xl"
           >
             <li><a href="#">HomePage</a></li>
             <li><a href="#">About me</a></li>
@@ -89,14 +89,14 @@
       ></div>
       <!-- jop name -->
       <div
-        class="absolute left-5 top-1/3 text-xl font-bold sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-32 xl:text-8xl"
+        class="absolute text-xl font-bold left-5 top-1/3 sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-32 xl:text-8xl"
       >
         <span class="text-gray-600">Frelance</span>
         <p id="text" class="text-red-500"></p>
       </div>
       <!-- card -->
       <div
-        class="absolute bottom-0 right-36 top-0 m-auto hidden h-fit w-1/4 flex-col gap-y-3 rounded-2xl bg-white p-6 lg:flex"
+        class="absolute top-0 bottom-0 flex-col hidden w-1/4 p-6 m-auto bg-white right-36 h-fit gap-y-3 rounded-2xl lg:flex"
       >
         <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Asim</h1>
         <p class="text-gray-500">
@@ -106,32 +106,30 @@
           and UX data analysis
         </p>
         <a
-          class="w-fit rounded-md bg-indigo-600 px-3 py-2 font-medium text-white"
+          class="px-3 py-2 font-medium text-white bg-indigo-600 rounded-md w-fit"
           href="#contact"
           >Click Me</a
         >
       </div>
     </section>
     <!-- about -->
-    <section class="container mx-auto flex gap-20 py-40" id="About">
-      <!-- lift -->
-      <div class="relative">
-        <img
-          class="object-cove absolute left-0 top-0 -z-20 h-1/4"
-          src="./img/dots.png"
-          alt="dots"
-        />
-      </div>
-      <div class="">
-        <img
-          class="h-full overflow-hidden rounded-full"
-          src="./img/portrait.png"
-          alt=""
-        />
+    <section class="px-10" id="About">
+      <div class="container flex gap-20 py-40 mx-auto">
+        <!-- left -->
+        <div class="relative">
+          <img
+            class="absolute top-0 left-0 -z-10 h-1/4"
+            src="./img/dots.png"
+            alt=""
+          />
+          <div class="h-full overflow-hidden rounded-full">
+            <img src="./img/portrait.png" alt="" />
+          </div>
+        </div>
       </div>
       <!-- right  -->
-      <div class="my-auto flex flex-col gap-3">
-        <h1 class="text-4xl font-bold uppercase text-indigo-600">About Me</h1>
+      <div class="flex flex-col gap-3 my-auto">
+        <h1 class="text-4xl font-bold text-indigo-600 uppercase">About Me</h1>
         <h1 class="text-3xl font-semibold text-black">Better Design</h1>
         <h1 class="text-3xl font-bold text-black">Better Experince</h1>
       </div>
