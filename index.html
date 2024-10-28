@@ -17,7 +17,7 @@
   <body class="nunito-body dark">
     <!-- into section  -->
     <section
-      class="relative h-[50dvh] overflow-hidden bg-gradient-to-t from-indigo-200 lg:h-screen dark:from-slate-800 dark:to-slate-900"
+      class="relative h-[50dvh] overflow-hidden bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 lg:h-screen"
     >
       <!-- navbar -->
       <nav class="fixed top-0 z-10 w-full bg-white px-5 dark:bg-slate-900">
@@ -32,7 +32,7 @@
           <!-- menu  -->
           <div>
             <ul
-              class="hidden space-x-10 text-sm font-bold uppercase text-gray-500 md:flex dark:text-white"
+              class="hidden space-x-10 text-sm font-bold uppercase text-gray-500 dark:text-gray-300 dark:text-white md:flex"
             >
               <li class="hover:text-indigo-400">
                 <a href="#">Home</a>
@@ -62,14 +62,14 @@
             class="z-20 flex cursor-pointer flex-col gap-1 md:hidden"
             id="hamburger"
           >
-            <div class="h-0.5 w-6 bg-black"></div>
-            <div class="h-0.5 w-6 bg-black"></div>
-            <div class="h-0.5 w-6 bg-black"></div>
+            <div class="h-0.5 w-6 bg-black dark:bg-white"></div>
+            <div class="h-0.5 w-6 bg-black dark:bg-white"></div>
+            <div class="h-0.5 w-6 bg-black dark:bg-white"></div>
           </div>
           <!-- Mobile Menu -->
           <ul
             id="menu"
-            class="absolute left-0 top-0 hidden w-full space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white"
+            class="absolute left-0 top-0 hidden w-full space-y-10 rounded-b-3xl bg-indigo-900 p-10 text-center text-white dark:bg-slate-900"
           >
             <li><a href="#">HomePage</a></li>
             <li><a href="#">About me</a></li>
@@ -93,15 +93,17 @@
       <div
         class="absolute left-5 top-1/3 text-xl font-bold sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-32 xl:text-8xl"
       >
-        <span class="text-gray-600">Frelance</span>
+        <span class="text-gray-600 dark:text-white">Frelance</span>
         <p id="text" class="text-red-500"></p>
       </div>
       <!-- card -->
       <div
-        class="absolute bottom-0 right-36 top-0 m-auto hidden h-fit w-1/4 flex-col gap-y-3 rounded-2xl bg-white p-6 lg:flex"
+        class="absolute bottom-0 right-36 top-0 m-auto hidden h-fit w-1/4 flex-col gap-y-3 rounded-2xl bg-white p-6 dark:bg-slate-900 dark:shadow-slate-900 lg:flex"
       >
-        <h1 class="text-4xl font-bold text-indigo-900">Hi, I'm Asim</h1>
-        <p class="text-gray-500">
+        <h1 class="text-4xl font-bold text-indigo-900 dark:text-white">
+          Hi, I'm Asim
+        </h1>
+        <p class="text-gray-200">
           I’m Asim, a software engineering student at Istanbul Nisantasi
           University. Design Tools: Figma, Adobe XD Web Development: HTML, CSS,
           JavaScript, Bootstrap5, Tailwind Design Process: Wireframing, mockups,
@@ -115,7 +117,7 @@
       </div>
     </section>
     <!-- about -->
-    <section class="px-10" id="About">
+    <section class="px-10 dark:bg-slate-900" id="About">
       <div
         class="container mx-auto flex flex-col-reverse items-center gap-36 py-40 lg:flex-row"
       >
@@ -136,32 +138,40 @@
         </div>
         <!-- right -->
         <div class="my-auto flex w-4/5 flex-col gap-3 lg:w-1/2">
-          <h1 class="text-4xl font-bold uppercase text-indigo-600">About Me</h1>
-          <h1 class="text-3xl text-black">Better Design</h1>
-          <h1 class="text-3xl font-bold text-black">Better Experience</h1>
-          <p class="text-gray-500">
+          <h1
+            class="text-4xl font-bold uppercase text-indigo-600 dark:text-white"
+          >
+            About Me
+          </h1>
+          <h1 class="text-3xl text-black dark:text-indigo-400">
+            Better Design
+          </h1>
+          <h1 class="text-3xl font-bold text-black dark:text-indigo-400">
+            Better Experience
+          </h1>
+          <p class="text-gray-500 dark:text-gray-300 dark:text-gray-400">
             I'm a front-end developer with a focus on UI/UX design. I use HTML,
             CSS, and JavaScript to create visually appealing and user-friendly
             websites, staying up-to-date with the latest trends and best
             practices to deliver exceptional results.
           </p>
-          <h2 class="font-bold text-gray-950">HTML</h2>
+          <h2 class="font-bold text-gray-950 dark:text-white">HTML</h2>
           <div class="h-3 w-full rounded-sm bg-gray-200">
             <div class="h-3 w-4/5 rounded-sm bg-indigo-600"></div>
           </div>
-          <h2 class="font-bold text-gray-950">CSS</h2>
+          <h2 class="font-bold text-gray-950 dark:text-white">CSS</h2>
           <div class="h-3 w-full rounded-sm bg-gray-200">
             <div class="h-3 w-5/6 rounded-sm bg-indigo-600"></div>
           </div>
-          <h2 class="font-bold text-gray-950">JavaScript</h2>
+          <h2 class="font-bold text-gray-950 dark:text-white">JavaScript</h2>
           <div class="h-3 w-full rounded-sm bg-gray-200">
             <div class="h-3 w-3/5 rounded-sm bg-indigo-600"></div>
           </div>
-          <h2 class="font-bold text-gray-950">Tailwind</h2>
+          <h2 class="font-bold text-gray-950 dark:text-white">Tailwind</h2>
           <div class="h-3 w-full rounded-sm bg-gray-200">
             <div class="h-3 w-1/2 rounded-sm bg-indigo-600"></div>
           </div>
-          <h2 class="font-bold text-gray-950">REACT</h2>
+          <h2 class="font-bold text-gray-950 dark:text-white">REACT</h2>
           <div class="h-3 w-full rounded-sm bg-gray-200">
             <div class="h-3 w-1/3 rounded-sm bg-indigo-600"></div>
           </div>
@@ -170,15 +180,17 @@
     </section>
     <hr />
     <!-- Services -->
-    <section id="Services">
+    <section id="Services" class="p-5 dark:bg-slate-900 lg:pb-12">
       <div
         class="container mx-auto flex flex-col items-center justify-center gap-3 pt-10"
       >
         <!-- top -->
-        <h1 class="text-3xl font-bold text-indigo-600">SERVICES</h1>
-        <h1 class="text-3xl">What do I Offer?</h1>
+        <h1 class="text-3xl font-bold text-indigo-600 dark:text-white">
+          SERVICES
+        </h1>
+        <h1 class="text-3xl dark:text-indigo-400">What do I Offer?</h1>
         <p
-          class="line-clamp-2 w-1/2 text-center text-gray-500 lg:line-clamp-none"
+          class="line-clamp-2 w-1/2 text-center text-gray-400 lg:line-clamp-none lg:pb-10"
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
           reprehenderit, quibusdam assumenda ab quo quam incidunt adipisci quis,
@@ -188,100 +200,100 @@
 
         <!-- bottom -->
         <div
-          class="grid grid-cols-1 gap-2 p-5 sm:p-0 md:grid-cols-2 lg:grid-cols-3"
+          class="grid grid-cols-1 gap-7 p-5 sm:p-0 md:grid-cols-2 lg:grid-cols-3"
         >
           <!-- card -->
           <div
-            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl md:my-10"
+            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl dark:bg-slate-800 dark:shadow-slate-900"
           >
             <img class="w-10" src="./img/icon.png" alt="icon" />
-            <h1 class="text-xl font-medium">UI/UX Design</h1>
-            <p class="text-gray-500">
+            <h1 class="dark: text-xl font-medium text-white">UI/UX Design</h1>
+            <p class="text-gray-500 dark:text-gray-300">
               Consequuntur reprehenderit, quibusdam assumenda ab quo quam
               incidunt adipisci quis.
             </p>
             <a
-              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white"
+              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white dark:text-indigo-400"
               href="#Services"
               >Read Moer</a
             >
           </div>
           <!-- card -->
           <div
-            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl md:my-10"
+            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl dark:bg-slate-800 dark:shadow-slate-900"
           >
             <img class="w-10" src="./img/icon.png" alt="icon" />
-            <h1 class="text-xl font-medium">UI/UX Design</h1>
-            <p class="text-gray-500">
+            <h1 class="dark: text-xl font-medium text-white">UI/UX Design</h1>
+            <p class="text-gray-500 dark:text-gray-300">
               Consequuntur reprehenderit, quibusdam assumenda ab quo quam
               incidunt adipisci quis.
             </p>
             <a
-              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white"
+              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white dark:text-indigo-400"
               href="#Services"
               >Read Moer</a
             >
           </div>
           <!-- card -->
           <div
-            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl md:my-10"
+            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl dark:bg-slate-800 dark:shadow-slate-900"
           >
             <img class="w-10" src="./img/icon.png" alt="icon" />
-            <h1 class="text-xl font-medium">UI/UX Design</h1>
-            <p class="text-gray-500">
+            <h1 class="dark: text-xl font-medium text-white">UI/UX Design</h1>
+            <p class="text-gray-500 dark:text-gray-300">
               Consequuntur reprehenderit, quibusdam assumenda ab quo quam
               incidunt adipisci quis.
             </p>
             <a
-              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white"
+              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white dark:text-indigo-400"
               href="#Services"
               >Read Moer</a
             >
           </div>
           <!-- card -->
           <div
-            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl md:my-10"
+            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl dark:bg-slate-800 dark:shadow-slate-900"
           >
             <img class="w-10" src="./img/icon.png" alt="icon" />
-            <h1 class="text-xl font-medium">UI/UX Design</h1>
-            <p class="text-gray-500">
+            <h1 class="dark: text-xl font-medium text-white">UI/UX Design</h1>
+            <p class="text-gray-500 dark:text-gray-300">
               Consequuntur reprehenderit, quibusdam assumenda ab quo quam
               incidunt adipisci quis.
             </p>
             <a
-              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white"
+              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white dark:text-indigo-400"
               href="#Services"
               >Read Moer</a
             >
           </div>
           <!-- card -->
           <div
-            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl md:my-10"
+            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl dark:bg-slate-800 dark:shadow-slate-900"
           >
             <img class="w-10" src="./img/icon.png" alt="icon" />
-            <h1 class="text-xl font-medium">UI/UX Design</h1>
-            <p class="text-gray-500">
+            <h1 class="dark: text-xl font-medium text-white">UI/UX Design</h1>
+            <p class="text-gray-500 dark:text-gray-300">
               Consequuntur reprehenderit, quibusdam assumenda ab quo quam
               incidunt adipisci quis.
             </p>
             <a
-              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white"
+              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white dark:text-indigo-400"
               href="#Services"
               >Read Moer</a
             >
           </div>
           <!-- card -->
           <div
-            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl md:my-10"
+            class="flex w-full flex-col gap-3 rounded-lg p-5 shadow-xl dark:bg-slate-800 dark:shadow-slate-900"
           >
             <img class="w-10" src="./img/icon.png" alt="icon" />
-            <h1 class="text-xl font-medium">UI/UX Design</h1>
-            <p class="text-gray-500">
+            <h1 class="dark: text-xl font-medium text-white">UI/UX Design</h1>
+            <p class="text-gray-500 dark:text-gray-300">
               Consequuntur reprehenderit, quibusdam assumenda ab quo quam
               incidunt adipisci quis.
             </p>
             <a
-              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white"
+              class="w-fit rounded-md px-2 py-2 text-sm font-semibold text-indigo-600 hover:bg-indigo-500 hover:text-white dark:text-indigo-400"
               href="#Services"
               >Read Moer</a
             >
@@ -299,7 +311,7 @@
         <h1 class="text-3xl font-bold text-indigo-600">Works</h1>
         <h2 class="text-3xl">Works and Projects</h2>
         <p
-          class="line-clamp-2 w-1/2 text-center text-gray-500 lg:line-clamp-none"
+          class="line-clamp-2 w-1/2 text-center text-gray-500 dark:text-gray-300 lg:line-clamp-none"
         >
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur
           reprehenderit.
@@ -385,7 +397,7 @@
         <h1 class="text-3xl font-bold text-indigo-600">Contact</h1>
         <h2 class="text-3xl">Have Question?</h2>
         <p
-          class="line-clamp-2 w-1/2 text-center text-gray-500 lg:line-clamp-none"
+          class="line-clamp-2 w-1/2 text-center text-gray-500 dark:text-gray-300 lg:line-clamp-none"
         >
           Do You Have an Idea? Lorem ipsum dolor, sit amet consectetur
           adipisicing elit.
