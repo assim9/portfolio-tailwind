@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,23 +14,25 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio Tailwind</title>
   </head>
-  <body class="nunito-body">
+  <body class="nunito-body dark">
     <!-- into section  -->
     <section
-      class="relative h-[50dvh] overflow-hidden bg-gradient-to-t from-indigo-200 lg:h-screen"
+      class="relative h-[50dvh] overflow-hidden bg-gradient-to-t from-indigo-200 lg:h-screen dark:from-slate-800 dark:to-slate-900"
     >
       <!-- navbar -->
-      <nav class="fixed top-0 z-10 w-full bg-white px-5">
+      <nav class="fixed top-0 z-10 w-full bg-white px-5 dark:bg-slate-900">
         <div class="container mx-auto flex items-center justify-between py-5">
           <!-- logo & name -->
           <div class="flex items-center gap-2">
             <img class="w-8" src="./img/logo.png" alt="" />
-            <span class="text-xl font-bold text-indigo-900">ProjectUX.</span>
+            <span class="text-xl font-bold text-indigo-900 dark:text-white"
+              >ProjectUX.</span
+            >
           </div>
           <!-- menu  -->
           <div>
             <ul
-              class="hidden space-x-10 text-sm font-bold uppercase text-gray-500 md:flex"
+              class="hidden space-x-10 text-sm font-bold uppercase text-gray-500 md:flex dark:text-white"
             >
               <li class="hover:text-indigo-400">
                 <a href="#">Home</a>

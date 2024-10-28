@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: "class",
+  darkMode: "class", // Enables class-based dark mode
   content: ["./*.html"],
   theme: {
     extend: {
@@ -11,7 +11,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      nunito: ['"Nunito"', "sans-serif"], // Nunito font included
+      nunito: ['"Nunito"', "sans-serif"],
     },
   },
   plugins: [],
