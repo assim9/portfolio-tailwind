@@ -9,8 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./autotyping.js" defer></script>
     <link rel="stylesheet" href="./css/style.css" />
     <title>Portfolio Tailwind</title>
   </head>
@@ -53,7 +51,8 @@
           </div>
           <!-- img  -->
           <img
-            class="hidden w-8 cursor-pointer md:block"
+            id="darkModeToggle"
+            class="w-8 cursor-pointer"
             src="./img/moon.png"
             alt="moon"
           />
@@ -315,13 +314,15 @@
     </section>
     <hr />
     <!-- works -->
-    <section id="Work" class="pb-10">
+    <section id="Work" class="pb-10 dark:bg-slate-900">
       <div
         class="container mx-auto flex flex-col items-center justify-center gap-3 pt-10"
       >
         <!-- top -->
-        <h1 class="text-3xl font-bold text-indigo-600">Works</h1>
-        <h2 class="text-3xl">Works and Projects</h2>
+        <h1 class="text-3xl font-bold text-indigo-600 dark:text-white">
+          Works
+        </h1>
+        <h2 class="text-3xl dark:text-indigo-600">Works and Projects</h2>
         <p
           class="line-clamp-2 w-1/2 text-center text-gray-500 dark:text-gray-300 lg:line-clamp-none"
         >
@@ -333,7 +334,7 @@
           class="grid grid-cols-1 gap-2 p-5 sm:p-0 md:grid-cols-2 lg:grid-cols-4"
         >
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -341,7 +342,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -349,7 +350,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -357,7 +358,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -365,7 +366,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -373,7 +374,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -381,7 +382,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -389,7 +390,7 @@
             />
           </div>
           <!-- card -->
-          <div class="rounded-lg p-5 shadow-xl">
+          <div class="rounded-lg p-5 shadow-xl dark:bg-slate-800">
             <img
               class="h-full w-full object-cover"
               src="./img/item.png"
@@ -401,13 +402,15 @@
     </section>
     <hr />
     <!-- contact  -->
-    <section id="Contact" class="pt-10">
+    <section id="Contact" class="pt-10 dark:bg-slate-900">
       <div
         class="container mx-auto flex flex-col items-center justify-center gap-3 pt-10"
       >
         <!-- top -->
-        <h1 class="text-3xl font-bold text-indigo-600">Contact</h1>
-        <h2 class="text-3xl">Have Question?</h2>
+        <h1 class="text-3xl font-bold text-indigo-600 dark:text-white">
+          Contact
+        </h1>
+        <h2 class="text-3xl dark:text-indigo-600">Have Question?</h2>
         <p
           class="line-clamp-2 w-1/2 text-center text-gray-500 dark:text-gray-300 lg:line-clamp-none"
         >
@@ -419,13 +422,13 @@
           <form
             action="#"
             method="POST"
-            class="rounded-lg bg-white p-6 shadow-lg"
+            class="rounded-lg bg-white p-6 shadow-lg dark:bg-slate-950"
           >
             <!-- Name Input -->
             <div class="mb-4">
               <label
                 for="name"
-                class="mb-2 block text-sm font-bold text-indigo-500"
+                class="mb-2 block text-sm font-bold text-indigo-500 dark:text-white"
                 >Name</label
               >
               <input
@@ -433,7 +436,7 @@
                 id="name"
                 name="name"
                 placeholder="Your Name"
-                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none dark:border-slate-800 dark:bg-slate-950 dark:placeholder-gray-400"
                 required
               />
             </div>
@@ -442,7 +445,7 @@
             <div class="mb-4">
               <label
                 for="email"
-                class="mb-2 block text-sm font-bold text-indigo-600"
+                class="mb-2 block text-sm font-bold text-indigo-600 dark:text-white"
                 >Email</label
               >
               <input
@@ -450,7 +453,7 @@
                 id="email"
                 name="email"
                 placeholder="Your Email"
-                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none dark:border-slate-800 dark:bg-slate-950 dark:placeholder-gray-400"
                 required
               />
             </div>
@@ -459,7 +462,7 @@
             <div class="mb-4">
               <label
                 for="message"
-                class="mb-2 block text-sm font-bold text-indigo-600"
+                class="mb-2 block text-sm font-bold text-indigo-600 dark:text-white"
                 >Message</label
               >
               <textarea
@@ -467,7 +470,7 @@
                 name="message"
                 rows="4"
                 placeholder="Your Message"
-                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                class="w-full rounded-md border border-gray-300 px-3 py-2 focus:border-indigo-500 focus:outline-none dark:border-slate-800 dark:bg-slate-950"
                 required
               ></textarea>
             </div>
@@ -486,7 +489,7 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-indigo-950 py-8 text-white">
+    <footer class="bg-indigo-950 py-8 text-white dark:bg-slate-900">
       <div class="container mx-auto px-4">
         <div
           class="grid grid-cols-1 gap-6 text-center md:grid-cols-4 md:text-left"
@@ -561,5 +564,7 @@
       </div>
     </footer>
     <script src="./app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./autotyping.js"></script>
   </body>
 </html>
