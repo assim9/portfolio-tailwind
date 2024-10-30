@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="./app.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
       rel="stylesheet"
@@ -51,8 +52,14 @@
           </div>
           <!-- img  -->
           <img
-            id="darkModeToggle"
-            class="w-8 cursor-pointer"
+            id="sun"
+            class="h-auto min-w-8 max-w-8 cursor-pointer object-contain"
+            src="./img/sun.png"
+            alt="sun"
+          />
+          <img
+            id="moon"
+            class="hidden h-auto min-w-8 max-w-8 cursor-pointer object-contain"
             src="./img/moon.png"
             alt="moon"
           />
@@ -83,6 +90,7 @@
         class="absolute bottom-0 right-0 mx-auto h-5/6 object-cover lg:left-0 lg:translate-x-[-54px]"
         src="./img/man.png"
         alt="man"
+        loading="lazy"
       />
       <!-- cercel -->
       <div
@@ -560,7 +568,6 @@
         </div>
       </div>
     </footer>
-    <script src="./app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./autotyping.js"></script>
   </body>

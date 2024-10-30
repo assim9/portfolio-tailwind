@@ -6,19 +6,51 @@ hamburger.addEventListener("click", () => {
   menu.classList.toggle("hidden");
   hamburger.classList.toggle("bg-white");
 });
-// Get the dark mode toggle image and the <html> element
-const toggle = document.getElementById("darkModeToggle");
-const htmlElement = document.documentElement; // Refers to the <html> element
+const sunImg = document.getElementById("sun");
+const moonImg = document.getElementById("moon");
 
-// Add a click event listener to the image
-toggle.addEventListener("click", function () {
-  // Toggle the 'dark' class on the <html> element
-  htmlElement.classList.toggle("dark");
+// Theme Variables
+const userTheme = localStorage.getItem("theme");
+const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-  // // Optional: You can log messages for debugging
-  // if (htmlElement.classList.contains("dark")) {
-  //   console.log("Dark mode activated!");
-  // } else {
-  //   console.log("Light mode activated!");
-  // }
+// Image Toggling
+const imgToggle = () => {
+  if (document.documentElement.classList.contains("dark")) {
+    sunImg.classList.remove("hidden");
+    moonImg.classList.add("hidden");
+  } else {
+    sunImg.classList.add("hidden");
+    moonImg.classList.remove("hidden");
+  }
+};
+
+// Theme Check
+const themeCheck = () => {
+  if (userTheme === "dark" || (!userTheme && systemTheme)) {
+    document.documentElement.classList.add("dark");
+  }
+  imgToggle();
+};
+
+// Manual Theme Switch
+const themeSwitch = () => {
+  document.documentElement.classList.toggle("dark");
+
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
+  } else {
+    localStorage.setItem("theme", "light");
+  }
+  imgToggle();
+};
+
+// Call theme switch on clicking buttons
+sunImg.addEventListener("click", () => {
+  themeSwitch();
 });
+moonImg.addEventListener("click", () => {
+  themeSwitch();
+});
+
+// Initial theme check
+themeCheck();
