@@ -1,7 +1,3 @@
-It looks like you want to write a README file for your portfolio project hosted on GitHub. Here's a basic structure you can follow:
-
----
-
 # Portfolio Website
 
 Welcome to my portfolio website, showcasing my work as a **Frontend Developer** and **UX/UI Designer**. This project is built using **Tailwind CSS** and **JavaScript**, with a focus on clean design, responsiveness, and functionality.
